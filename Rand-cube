@@ -11,9 +11,7 @@ int main()
     do{
     system("CLS");
     srand(time(NULL));
-    n = rand()%7;
-    if(n==0)
-        n = rand()%7;
+    n = rand()%6+1;//liczba z zakresu 1-5 +1 czyli od 1 do 6;
 
     cout<<"Wylosowana liczba to: "<<n<<endl;
     cout<<"Czy chcesz wylosowac jeszcze raz? (y/n): ";
