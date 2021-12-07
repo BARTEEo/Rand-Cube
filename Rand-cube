@@ -1,0 +1,25 @@
+#include <iostream>
+
+#include <time.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    char wybor;
+
+    do{
+    system("CLS");
+    srand(time(NULL));
+    n = rand()%7;
+    if(n==0)
+        n = rand()%7;
+
+    cout<<"Wylosowana liczba to: "<<n<<endl;
+    cout<<"Czy chcesz wylosowac jeszcze raz? (y/n): ";
+    cin>>wybor;
+
+    }while(wybor == 'y');
+
+    return 0;
+}
